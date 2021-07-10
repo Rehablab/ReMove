@@ -1,0 +1,73 @@
+{
+    "files.exclude":
+    {
+        "**/.DS_Store":true,
+        "**/.git":true,
+        "**/.gitignore":true,
+        "**/.gitmodules":true,
+        "**/*.booproj":true,
+        "**/*.pidb":true,
+        "**/*.suo":true,
+        "**/*.user":true,
+        "**/*.userprefs":true,
+        "**/*.unityproj":true,
+        "**/*.dll":true,
+        "**/*.exe":true,
+        "**/*.pdf":true,
+        "**/*.mid":true,
+        "**/*.midi":true,
+        "**/*.wav":true,
+        "**/*.gif":true,
+        "**/*.ico":true,
+        "**/*.jpg":true,
+        "**/*.jpeg":true,
+        "**/*.png":true,
+        "**/*.psd":true,
+        "**/*.tga":true,
+        "**/*.tif":true,
+        "**/*.tiff":true,
+        "**/*.3ds":true,
+        "**/*.3DS":true,
+        "**/*.fbx":true,
+        "**/*.FBX":true,
+        "**/*.lxo":true,
+        "**/*.LXO":true,
+        "**/*.ma":true,
+        "**/*.MA":true,
+        "**/*.obj":true,
+        "**/*.OBJ":true,
+        "**/*.asset":true,
+        "**/*.cubemap":true,
+        "**/*.flare":true,
+        "**/*.mat":true,
+        "**/*.meta":true,
+        "**/*.prefab":true,
+        "**/*.unity":true,
+        "build/":true,
+        "Build/":true,
+        "Library/":true,
+        "library/":true,
+        "obj/":true,
+        "Obj/":true,
+        "ProjectSettings/":true,
+        "temp/":true,
+        "Temp/":true
+    },
+    "editor.links": false,
+    "editor.formatOnSave": true,
+    "prettier.semi": false,
+    "prettier.useEditorConfig": false,
+    "fileheader.customMade": {
+        // 头部注释默认字段
+        "Author": "Ryan",
+        "Date": "Do not edit", // 设置后默认设置文件生成时间
+        "LastEditTime": "Do not edit", // 设置后，保存文件更改默认更新最后编辑时间
+        "LastEditors": "Ryan", // 设置后，保存文件更改默认更新最后编辑人
+        "Description": "",
+        "FilePath": "Do not edit", // 设置后，默认生成文件相对于项目的路径
+    },
+    // 插件配置项
+    "fileheader.configObj": {
+        "autoAdd": true,
+    },
+}
