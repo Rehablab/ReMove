@@ -1,0 +1,24 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:ba52bfc90b4a33d87c5949fc6d9abe92:fa2fc7476212a141c2baabd7d49a1e2d:ca36136e88755260a576c4c48bfde48c$
+#
+:format=40300
+:texture=Account.png
+:size=1024x2048
+:pivotpoints=disabled
+:borders=disabled
+
+Account_Apple;834;1930;130;116; 0.5;0.5; 0;0;0;0
+Account_Banana;706;1592;124;106; 0.5;0.5; 0;0;0;0
+Account_Btn_Close_normal;706;1507;232;83; 0.5;0.5; 0;0;0;0
+Account_Fireworks;2;1700;830;346; 0.5;0.5; 0;0;0;0
+Account_Frame;2;925;702;773; 0.5;0.5; 0;0;0;0
+Account_Light;2;225;694;698; 0.5;0.5; 0;0;0;0
+Account_Orange;834;1662;124;126; 0.5;0.5; 0;0;0;0
+Account_Pear;940;1526;82;134; 0.5;0.5; 0;0;0;0
+Account_Strawberry;706;1373;94;132; 0.5;0.5; 0;0;0;0
+Account_Watermelon;834;1790;124;138; 0.5;0.5; 0;0;0;0

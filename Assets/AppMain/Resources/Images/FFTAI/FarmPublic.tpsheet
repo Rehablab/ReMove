@@ -1,0 +1,62 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:ddacda7b5b2515b6ee1a2d7db00f4228:7b816d0a09f7a869e06a21575ff04f1b:0a7dd1c9441e218a92a55254abcaeeef$
+#
+:format=40300
+:texture=FarmPublic.png
+:size=2048x2048
+:pivotpoints=disabled
+:borders=disabled
+
+BG_Btn_Music_Add_Normal;1977;659;64;62; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Add_Press;1977;595;64;62; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Continue_Normal;1288;1530;186;76; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Continue_press;1476;1542;186;76; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Exit_Normal;930;608;186;76; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Exit_Press;930;530;186;76; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_L_Normal;1977;921;64;64; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_L_Press;1977;855;64;64; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_R_Normal;1977;789;64;64; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_R_Press;1977;723;64;64; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Sub_Normal;1977;531;64;62; 0.5;0.5; 0;0;0;0
+BG_Btn_Music_Sub_Press;1130;898;64;62; 0.5;0.5; 0;0;0;0
+BG_Music_Bg;1462;1686;321;64; 0.5;0.5; 0;0;0;0
+BG_Music_Effect;1462;1620;321;64; 0.5;0.5; 0;0;0;0
+BG_Music_Frame;1288;987;744;501; 0.5;0.5; 0;0;0;0
+BG_Music_Rate;1288;1608;162;50; 0.5;0.5; 0;0;0;0
+Black;1664;1492;54;54; 0.5;0.5; 0;0;0;0
+Blue;1720;1492;54;54; 0.5;0.5; 0;0;0;0
+CDbackground;2;373;627;211; 0.5;0.5; 0;0;0;0
+ChestClosed;1785;1490;257;186; 0.5;0.5; 0;0;0;0
+ChestOpen;866;1157;286;227; 0.5;0.5; 0;0;0;0
+Coin;742;914;63;70; 0.5;0.5; 0;0;0;0
+Hint_Black;2;1386;1284;272; 0.5;0.5; 0;0;0;0
+Home_guideline_1;1154;962;76;422; 0.5;0.5; 0;0;0;0
+Home_hand;631;372;185;185; 0.5;0.5; 0;0;0;0
+Home_Hand_Countdown_Bar;807;739;210;210; 0.5;0.5; 0;0;0;0
+Home_Hand_Countdown_Bottom;1019;686;210;210; 0.5;0.5; 0;0;0;0
+Home_sensor;1796;1900;231;146; 0.5;0.5; 0;0;0;0
+Home_Single_Bar;2018;1860;28;38; 0.5;0.5; 0;0;0;0
+Home_single_Icon;1664;1548;70;70; 0.5;0.5; 0;0;0;0
+Home_Train_Bar;1288;1490;30;38; 0.5;0.5; 0;0;0;0
+Home_Train_Icon;1736;1550;46;68; 0.5;0.5; 0;0;0;0
+Orange;1232;1330;54;54; 0.5;0.5; 0;0;0;0
+Pause_Frame;2;586;738;398; 0.5;0.5; 0;0;0;0
+Portal;1462;1752;332;294; 0.5;0.5; 0;0;0;0
+PortalDoor;742;559;186;178; 0.5;0.5; 0;0;0;0
+Red;1232;1274;54;54; 0.5;0.5; 0;0;0;0
+TimeUp;1232;579;743;406; 0.5;0.5; 0;0;0;0
+TM_Scope_Frame;1320;1491;183;37; 0.5;0.5; 0;0;0;0
+TM_Speed_Frame;2;333;183;37; 0.5;0.5; 0;0;0;0
+TrainingMode_Details_Frame;866;951;262;204; 0.5;0.5; 0;0;0;0
+TrainingMode_Dynamics;1505;1490;44;50; 0.5;0.5; 0;0;0;0
+TrainingMode_Dynamics_Frame;1796;1678;220;220; 0.5;0.5; 0;0;0;0
+TrainingMode_Dynamics_Shade;1551;1496;50;44; 0.5;0.5; 0;0;0;0
+Upgrade_B;2;986;862;398; 0.5;0.5; 0;0;0;0
+Upgrade_Lamp;2;1660;1458;386; 0.5;0.5; 0;0;0;0
+White;1232;1218;54;54; 0.5;0.5; 0;0;0;0
+Yellow;1232;1162;54;54; 0.5;0.5; 0;0;0;0

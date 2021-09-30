@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TrialScene.unity
+    guid: bed45d40b38c94846a36d2021af4e96c
+  - enabled: 0
     path: Assets/Scenes/DesignTrajectory.unity
     guid: 16fa83e3b81ccf34598344ccc636b44f
   m_configObjects: {}
