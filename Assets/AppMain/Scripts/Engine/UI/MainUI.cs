@@ -76,7 +76,18 @@ public class MainUI : MonoBehaviour
     public static Vector2 M2VecConvert2GameVec(Vector2 m2Vector)
     {
         // 计算相对比例后，乘以实际宽度，再加上偏移量
-        return (m2Vector * MainUI.PanelRect.size / MainUI.PanelBoundaryRect.size) + MainUI.PanelRect.min;
+        return BeSafeGameVec((m2Vector * MainUI.PanelRect.size / MainUI.PanelBoundaryRect.size) + MainUI.PanelRect.min);
+    }
+    /// <summary>
+    /// Make sure vector2 is within a safe range
+    /// </summary>
+    /// <param name="vector2"></param>
+    /// <returns></returns>
+    public static Vector2 BeSafeGameVec(Vector2 vector2)
+    {
+        vector2.x = Mathf.Clamp(vector2.x, PanelRect.xMin, PanelRect.xMax);
+        vector2.y = Mathf.Clamp(vector2.y, PanelRect.yMin, PanelRect.yMax);
+        return vector2;
     }
     /// <summary>
     /// 游戏坐标转换成控制台的相对坐标。

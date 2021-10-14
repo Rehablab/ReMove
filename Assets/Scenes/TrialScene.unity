@@ -149,7 +149,7 @@ RectTransform:
   m_GameObject: {fileID: 173948865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 807345310}
   m_RootOrder: 1
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 180555200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32605412301a1a4489101cbaf1a85a82, type: 3}
+  m_Script: {fileID: 11500000, guid: db7e620c9cb268b4cbd1b9c061269c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xCore: {fileID: 180555205}
@@ -671,7 +671,7 @@ RectTransform:
   m_GameObject: {fileID: 1007683808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.5}
-  m_LocalScale: {x: 50, y: 50, z: 1}
+  m_LocalScale: {x: 35, y: 35, z: 1}
   m_Children: []
   m_Father: {fileID: 807345310}
   m_RootOrder: 0
@@ -696,7 +696,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.25
 --- !u!50 &1007683811
 Rigidbody2D:
   serializedVersion: 4
@@ -1297,6 +1297,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTrialButton: {fileID: 1023199084}
   backButton: {fileID: 1730560964}
+  titleText: {fileID: 811171738}
+  trialStatusText: {fileID: 1319028718}
+  DeviceNameText: {fileID: 1980126579}
+  showStatusFlag: 0
 --- !u!1 &1572484960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1746,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -82.99999, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073990681
 MonoBehaviour:

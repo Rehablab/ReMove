@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: Qiang
  * @Date: 2021-05-10 15:06:15
- * @LastEditTime: 2021-09-23 17:20:45
+ * @LastEditTime: 2021-10-13 14:29:50
  * @LastEditors: Ryan
  * @Description: 
  * @FilePath: \X-Engine\Assets\AppMain\Scripts\Engine\Core\XCore.cs
@@ -21,7 +21,7 @@ public class XCore : MonoBehaviour
     // 应用全局状态
     public static ApplicationState CurAppState = ApplicationState.NONE;
 
-    private static Vector2 m_HandPosition = new Vector2(0f, 0f);
+    private static Vector2 m_HandPosition = Vector2.zero;
     private ConcurrentDictionary<string, DeviceState> m_Devices = new ConcurrentDictionary<string, DeviceState>();
     public ConcurrentDictionary<string, DeviceState> Devices
     {
@@ -113,6 +113,7 @@ public class XCore : MonoBehaviour
             switch (CurAppState)
             {
                 case ApplicationState.UNTRIALED:
+                    m_HandPosition = MainUI.PanelRect.min;
                     break;
             }
         }

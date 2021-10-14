@@ -15,7 +15,7 @@ public class XCoreParameter
         cdString[CDStringKeys.CurTrialState] = TrialState.TRIAL_SCRIPT_WAITING.ToString();
 
         cdDouble[CDDoubleKeys.CircleTime] = 1.2d; // 圆形进度条等待时间
-        cdDouble[CDDoubleKeys.TakeBreakTime] = 2d; // 上流程结束后 Break等待的时间
+        cdDouble[CDDoubleKeys.TakeBreakTime] = 2; // 上流程结束后 Break等待的时间
     }
     public static void TryUpdateCurState(TrialState trialState)
     {

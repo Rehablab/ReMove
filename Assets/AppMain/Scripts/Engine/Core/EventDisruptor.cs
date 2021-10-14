@@ -20,22 +20,18 @@ public class EventDisruptor
     private static Disruptor<TrialEvent> m_TrialDisruptor;
     public static void Init()
     {
-
         try
         {
             TrialEventHandler.Init();
-            // TrialDisruptor = new Disruptor<TrialEvent>(() => new TrialEvent(), 256, TaskScheduler.Default);
+            // m_TrialDisruptor = new Disruptor<TrialEvent>(() => new TrialEvent(), 256, TaskScheduler.Default);
             m_TrialDisruptor = new Disruptor<TrialEvent>(() => new TrialEvent(), ringBufferSize: 256);
-
-            // var m_TrialEventHandler = new TrialEventHandler();
-            // m_TrialDisruptor.HandleEventsWith(m_TrialEventHandler);
             m_TrialDisruptor.HandleEventsWith(new TrialEventHandler());
 
             m_TrialDisruptor.Start();
         }
         catch (Exception e)
         {
-            Debug.Log($"{e.Message}\n{e.StackTrace}");
+            Debug.LogError($"{e.Message}\n{e.StackTrace}");
         }
     }
     public static void PublishTrialEvent(TrialEventType Type)
