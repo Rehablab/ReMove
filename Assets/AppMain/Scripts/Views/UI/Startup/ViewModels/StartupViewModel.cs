@@ -23,6 +23,23 @@ public class StartupViewModel : MonoBehaviour
     {
         try
         {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (showStatusFlag)
+                {
+                    showStatusFlag = false;
+                }
+                else
+                {
+                    showStatusFlag = true;
+                }
+            }
+
+            startTrialButton.gameObject.SetActive(showStatusFlag);
+            backButton.gameObject.SetActive(showStatusFlag);
+            titleText.gameObject.SetActive(showStatusFlag);
+            trialStatusText.gameObject.SetActive(showStatusFlag);
+            DeviceNameText.gameObject.SetActive(showStatusFlag);
             switch (XCore.CurAppState)
             {
                 case ApplicationState.NONE:
@@ -40,29 +57,6 @@ public class StartupViewModel : MonoBehaviour
                     TrialState CurTrialState = (TrialState)Enum.Parse(typeof(TrialState), XCoreParameter.cdString[CDStringKeys.CurTrialState], true);
                     trialStatusText.text = CurTrialState.ToString();
                     break;
-            }
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (showStatusFlag)
-                {
-                    showStatusFlag = false;
-                }
-                else
-                {
-                    showStatusFlag = true;
-                }
-            }
-            if (showStatusFlag)
-            {
-                titleText.gameObject.SetActive(true);
-                trialStatusText.gameObject.SetActive(true);
-                DeviceNameText.gameObject.SetActive(true);
-            }
-            else
-            {
-                titleText.gameObject.SetActive(false);
-                trialStatusText.gameObject.SetActive(false);
-                DeviceNameText.gameObject.SetActive(false);
             }
         }
         catch (Exception e)
