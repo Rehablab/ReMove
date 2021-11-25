@@ -1,7 +1,7 @@
 ﻿/*
  * @Author: Qiang
  * @Date: 2021-05-10 15:06:15
- * @LastEditTime: 2021-10-13 14:29:50
+ * @LastEditTime: 2021-11-18 15:04:22
  * @LastEditors: Ryan
  * @Description: 
  * @FilePath: \X-Engine\Assets\AppMain\Scripts\Engine\Core\XCore.cs
@@ -10,7 +10,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static XCoreParameter;
 using System.Collections.Concurrent;
 
 public class XCore : MonoBehaviour

@@ -12,10 +12,12 @@ public class XCoreParameter
     public static ConcurrentDictionary<string, float> cdFloat = new ConcurrentDictionary<string, float>();
     public static void Init()
     {
+        Debug.Log($"Start Init");
         cdString[CDStringKeys.CurTrialState] = TrialState.TRIAL_SCRIPT_WAITING.ToString();
 
-        cdDouble[CDDoubleKeys.CircleTime] = 1.2d; // 圆形进度条等待时间
-        cdDouble[CDDoubleKeys.TakeBreakTime] = 2; // 上流程结束后 Break等待的时间
+        cdDouble[CDDoubleKeys.CircleTime] = Constant.FreeTrial.CircleTime; // 圆形进度条等待时间
+        cdDouble[CDDoubleKeys.TakeBreakTime] = Constant.FreeTrial.TakeBreakTime; // 上流程结束后 Break等待的时间
+        Debug.Log($"Init Done");
     }
     public static void TryUpdateCurState(TrialState trialState)
     {
