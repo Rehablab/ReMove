@@ -30,7 +30,7 @@ Only windows10 operating systems are now supported.
 
 ```bash
 # example.csv
-start_x,start_y,end_x,end_y,x_m,y_m,x_b,y_b
+start_x,start_y,end_x,end_y,mass_x,mass_y,damping_x,damping_y
 0.32,0.001,0.32,0.267,5,10,30,60
 0.32,0.001,0.001,0.267,10,20,60,120
 0.32,0.001,0.26,0.2,5,10,30,60
