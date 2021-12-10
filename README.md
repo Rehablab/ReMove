@@ -56,4 +56,4 @@ A peer-to-peer motion experiment simulated with a mouse.When the motion reaches 
 
 ## License
 
-MIT.
+[MIT](./LICENSE)
