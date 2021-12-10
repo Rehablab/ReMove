@@ -47,7 +47,7 @@ The overall structure chart is shown in Figure 1.
 
 <div align=center><img src="./StructureDiagram.jpg" /></div>
 
-<center>Figure 1. The structure chart of X-Controller.</center>
+<p align="center">Figure 1. The structure chart of X-Controller.</p>
 
 X-Controller has three different functional modules, including the customization of movement, device status tracking, and the extraction of kinematic data.
 
@@ -55,7 +55,7 @@ The main UI of X-Controller is shown in Figure 2.
 
 <div align=center><img src="./MainUI.jpg" /></div>
 
-<center>Figure 2. The main UI of X-Controller.</center>
+<p align="center">Figure 2. The main UI of X-Controller.</p>
 
 X-Controller customizes movement tracks through the grip of M2pro based on the default trial-based paradigm, which is a point-to-point movement. Researchers can freely set the location of start-point and end-point by the user interface within the range of the operation platform (52cm \* 36cm). what&#39;s more, as shown in Figure 2.B, X-Controller also provides a visual feedback during the movement trials, displaying the real-time position of the grip and the targets.
 
@@ -69,7 +69,7 @@ The subject (the author himself) was asked to move towards from start-point to s
 
 <div align=center><img src="./DataSample.png" /></div>
 
-<center>Figure 3. The data sample of X-Controller.</center>
+<p align="center">Figure 3. The data sample of X-Controller.</p>
 
 # **Acknowledgement**
 
