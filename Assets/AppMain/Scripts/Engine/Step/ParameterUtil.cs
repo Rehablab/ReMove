@@ -88,9 +88,8 @@ namespace FFTAI.X.Trial.Step
                         // 4,5-marker  6,7,8,9,10,11-mkb
                         if (strSplit.Length >= 6)
                         {
-                            markList.Add(new float[] { float.Parse(strSplit[4]), float.Parse(strSplit[5]) });
-                            // Resist.Add(new float[] { 0.2f, 0.2f, float.Parse(strSplit[6]), float.Parse(strSplit[7]), float.Parse(strSplit[8]), float.Parse(strSplit[9]), float.Parse(strSplit[10]), float.Parse(strSplit[11]) });
-                            Resist.Add(new float[] { float.Parse(strSplit[6]), float.Parse(strSplit[7]), float.Parse(strSplit[8]), float.Parse(strSplit[9]) });
+                            markList.Add(new float[] { float.Parse(strSplit[Constant.CSVParamIndex.Marker]), float.Parse(strSplit[Constant.CSVParamIndex.Marker + 1]) });
+                            Resist.Add(new float[] { float.Parse(strSplit[Constant.CSVParamIndex.Resist]), float.Parse(strSplit[Constant.CSVParamIndex.Resist + 1]), float.Parse(strSplit[Constant.CSVParamIndex.Resist + 2]), float.Parse(strSplit[Constant.CSVParamIndex.Resist + 3]) });
                         }
                         break;
                 }
