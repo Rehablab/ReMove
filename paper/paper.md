@@ -2,11 +2,13 @@
 title: 'X-Controller–a application to control the commercial robots for mechanic research'
 tags:
     - Unity
-    - C Sharp
-    - mechanic research
+    - CSharp
+    - biomechanics
+    - motor control
+    - clinical research
     - resistance training
     - rehabilitation robot
-    - Multimodal data
+    - kinematic data
 authors:
     - name: Qiang Xu
       affiliation: 1
@@ -25,11 +27,11 @@ date: 10 December 2021
 bibliography: paper.bib
 ---
 
-# **Summary:**
+# Summary
 
-It has been shown that resistance affects the motor control strategies of humans(Gottlieb 1996). Previous RCTs also confirmed the therapeutic effect of resistance training(Flansbjer, Lexell, and Brogårdh 2012)(Ouellette et al. 2004). Current studies may be stuck in the precise control of the dynamic parameters(Gambassi, Coelho-Junior, and Schwingel, n.d.).
+It has been shown that resistance affects the motor control strategies of humans(Gottlieb 1996). Previous RCTs also confirmed the therapeutic effect of resistance training(Flansbjer, Lexell, and Brogårdh 2012)(Ouellette et al. 2004). Current studies may be stuck in the ```precise control``` of the dynamic parameters(Gambassi, Coelho-Junior, and Schwingel, n.d.).
 
-Having a software to create the ideal dynamic environment is essential for further studies in biomechanics, motor control, and clinical research. Here we introduce X-Controller, a self-design application in order to create different dynamic situations and collect kinematic data of upper extremity on the commercial upper limb rehabilitation robot.
+Having a software to create the ideal dynamic environment is essential for further studies in ```biomechanics```, ```motor control```, and ```clinical research```. Here we introduce [`X-Controller`](https://github.com/Rehablab/X-Controller), a self-design application in order to create different ```dynamic situations``` and collect ```kinematic data``` of upper extremity on the commercial upper limb rehabilitation robot.
 
 # Statement of need
 
@@ -41,19 +43,19 @@ Thus, we introduce X-Controller, the self-design application developed by unity 
 
 In the field of the motor control study, X-Controller provides a way for direct control of the robot to create different dynamic environment, including the magnitude of resistance, the property of resistance, and the movement trajectories. X-Controller not only simulate both the inertial and viscous load but also realize the continuous control of applied load just by typing the keyboard. Using X-Controller, researchers are freed from the heavy experiment preparations (such as lifting 30Kg weight plates) and create the expecting environment in minutes. In the field of clinical practice, X-Controller simplifies the customization of movement trajectory and resistance. It enables the therapists who don&#39;t have any programming capability to set dynamic parameters using a user interface。 In the field of clinical study, X-Controller is developed based on the commercial upper limb rehabilitation robot – M2pro (Fourier Intelligence inc., Shanghai, China). Based on the initial code, X-Controller can get access to most of commercial robots on the market. This may narrow the instrumental error in the multicenter-clinical trials and the bias in the future META analysis.
 
-# **Software overview**
+# Software overview
 
-The overall structure chart is shown in Figure 1.
+The overall structure chart is shown in [Figure 1](#refer-anchor-1).
 
-<div align=center><img src="./StructureDiagram.jpg" /></div>
+<div id="refer-anchor-1" align=center><img src="./StructureDiagram.jpg" /></div>
 
 <p align="center">Figure 1. The structure chart of X-Controller.</p>
 
 X-Controller has three different functional modules, including the customization of movement, device status tracking, and the extraction of kinematic data.
 
-The main UI of X-Controller is shown in Figure 2.
+The main UI of X-Controller is shown in [Figure 2](#refer-anchor-2).
 
-<div align=center><img src="./MainUI.jpg" /></div>
+<div id="refer-anchor-2" align=center><img src="./MainUI.jpg" /></div>
 
 <p align="center">Figure 2. The main UI of X-Controller.</p>
 
@@ -61,19 +63,19 @@ X-Controller customizes movement tracks through the grip of M2pro based on the d
 
 X-Controller can extract the kinematic data of the grip of M2pro in 25Hz maximum, including the location and force in two-dimensional coordinate. Meanwhile, X-Controller also outputs the corresponding state of the finite state machine in each observation point. Based on that, researchers can split the whole kinematic data into every point-to-point movement, which is really convenient for the following analysis including motor learning, muscle synergy calculation, and collaborative analysis. All data extracted is saved in .csv format.
 
-# **Experimental example**
+# Experimental example
 
 To demonstrate the function of X-Controller, we collected one set of kinematic data in Ruijin Hospital.
 
-The subject (the author himself) was asked to move towards from start-point to seven different targets set by the therapist who doesn&#39;t have any knowledge of programming. The trajectories and velocity profiles are shown in Fig2.
+The subject (the author himself) was asked to move towards from start-point to seven different targets set by the therapist who doesn&#39;t have any knowledge of programming. The trajectories and velocity profiles are shown in [Figure 3](#refer-anchor-3).
 
-<div align=center><img src="./DataSample.png" /></div>
+<div id="refer-anchor-3" align=center><img src="./DataSample.png" /></div>
 
 <p align="center">Figure 3. The data sample of X-Controller.</p>
 
-# **Acknowledgement**
+# Acknowledgements
 
-# **Reference**
+# References
 
 Bishop, Robert H. 2000. _Learning with LabVIEW_. 3. print., Student ed. Menlo Park, Calif.: Addison-Wesley Longman.
 
