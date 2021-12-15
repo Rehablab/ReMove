@@ -21,7 +21,6 @@ public class JoyStick : MonoBehaviour
             {
                 case ApplicationState.TRIALING:
                     this.gameObject.GetComponent<Renderer>().enabled = true;
-                    this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
                     UpdateHandPosition();
                     break;
                 default:
