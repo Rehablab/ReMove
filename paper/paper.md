@@ -1,5 +1,5 @@
 ---
-title: 'ReMove–a application to control the commercial robots for mechanic research'
+title: 'A Configuration Tool for Robot-Assisted Experiments in Rehabilitation'
 tags:
     - Unity
     - CSharp
@@ -7,21 +7,28 @@ tags:
     - Robot control
     - biomechanics
 authors:
-    - name: Qiang Xu
-      affiliation: 1
+    - name: Qiang Xu^[co-first author]
+      affiliation: "1, 3"
       orcid: 0000-0001-8781-301X
-    - name: Zhi Chen
-      affiliation: 2
+    - name: Zhi Chen^[co-first author]
+      affiliation: "1, 2"
       orcid: 0000-0002-0202-006X
-    - name: Minos.Niu
+    - name: Jiaxi Tang
+      affiliation: "1, 3"
+      orcid:
+    - name: Cheng Zhuang
+      affiliation: "3"
+      orcid:
+    - name: Minos.Niu^[corresponding author]
+      affiliation: "1"
       orcid:
 
 affiliations:
-    - name: Fourier Intelligence inc., Shanghai, China
-      index: 1
     - name: Department of Rehabilitation Medicine, Ruijin Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China.
+      index: 1
+    - name: School of Medicine, Shanghai Jiao Tong University, Shanghai, China.
       index: 2
-    - name: Laboratory of Neurorehabilitation Engineering, School of Biomedical Engineer-ing, Shang-hai Jiao Tong University, Shanghai, China
+    - name: Fourier Intelligence inc., Shanghai, China.
       index: 3
 
 date: 12 December 2021
@@ -30,73 +37,57 @@ bibliography: paper.bib
 
 # Summary
 
-Resistance training has shown efficacy in post-stroke rehabilitation(Flansbjer, Lexell, and Brogårdh 2012)(Ouellette et al. 2004). Further studies should be focused to evaluate the effect of single variables of resistance training, such as intensity, rest interval, and frequency(Gambassi, Coelho-Junior, and Schwingel, n.d.). Thus, having software to create the expected dynamic environment is essential for further studies in biomechanics, motor control, and clinical research. Here we introduce ['ReMove'](https://github.com/Rehablab/ReMove), a programmable application in order to alter movement trajectory and resistance on the commercial upper limb rehabilitation robot. 
+Resistance training has shown efficacy in post-stroke rehabilitation. In order to understand which aspects of resistance (i.e. magnitude, type) play an important role for movement re-habilitation, haptic robots are widely used for simulation of mechanical resistance due to easy tweaking of parameters. Although adjustment of robot-delivered resistance can be achieved by direct modification on the source code, it would be much more efficient if configuration of resistance can be integrated into a standalone toolkit. Therefore we have developed [`ReMove`](https://github.com/Rehablab/ReMove), a programmable application for customization of robot-delivered re-sistance and robot-guided movements on rehabilitation robots. ReMove provides a plain-text interface that specifies the robot behavior during each trial of movement, and it renders both the graphical and mechanical specs during the movement. By the time of submission, ReMove had been supporting 2 clinical studies. Pilot data supported the feasibility and utili-ty of ReMove in movements against light and heavy resistance.
 
 # Statement of need
 
-Previous studies confirm that resistance alters the motor control strategies of humans. Add-ing load would induce several physiological changes, including a higher magnitude of mus-cle activities, longer activation period of muscle activation, and different activation patterns of the brain cortex(Gottlieb 1996)(Dai et al. 2001)(Dettmers et al. 1995). These changes may explain the therapeutic effect of resistance training. To understand the control patterns under different resistance, researchers need methods to control the applied load during movement.
-In biomechanics, researchers struggle to create resistance of different properties in a real-life scenario, such as adding weight to the barbells or using elastic strings. Once the experi-mental scene is set up, the applied load is constant. Thus, this method cannot implement trial-by-trial modification. What’s more, some properties of resistance are hard to be creat-ed, such as the viscous load or the inertial load in the horizontal plane. 
+Previous studies have shown the therapeutic effect of resistance training, including the im-provement of gait speed(Mehta et al. 2012), muscle strength(U Flansbjer, Lexell, and Brogårdh 2012), perceived participation(Ub Flansbjer et al. 2008), etc. It becomes interest-ing to test which aspects of mechanical resistance could elicit physiological response that is beneficial. This line of studies require easy tweaking of resistance, including the change of type, magnitide, and timing of resistance. However, the first challenge is the generation of different types of resistance, e.g. viscocity is cumbersome to prepare in real-world setups. The second challenge is to flexibly change the parameters (e.g. amplitude) using real-world objects.
 
-Some existing software may be used to solve some of these problems, such as LabVIEW(Bishop 2000), H3D, and PsychoPy(Peirce 2007). Based on the functions, the software above can be divided into two categories: robot driving and study arrangement. LabVIEW, a graphical dataflow programming environment for the integration of hardware, is typical of the robot driving software. It has strength in driving robots but weakness in study design. What’s more, LabVIEW shows more applicability in engineering, rather than scien-tific research. PsychoPy, a psychophysics software developed in python for study arrange-ment, is typical of the second category. It has advantages in study design, but needs extra programming to drive a robot. Until now, researchers haven’t had software that gears to the scientific purpose yet. 
+Simulation of resistance using haptic robots are advantageous for learning the sensorimotor control in humans. The properties of resistance can be changed on the source code on de-mand. The disadvantage is also obvious, since most clinical researchers lack the knowledge of programming. Although the barrier may be lowered for robot programming by use of graphical environments (LabVIEW, Simulink) or tools for experiment customization (E-Prime, PsychoPy), no existing software could handle both the simulation and arrangement of resistance in rehabilitation studies.
 
-In stroke rehabilitation, clinical researchers pay growing attention to the upper-limb function recovery, because the motor control of upper limbs is more complex, responsible for more functions in the activities of daily living, and are difficult to recover. Thus, we introduce ReMove, the programmable application developed by unity to create the different resistance and collect kinematic data on the commercial upper limb rehabilitation robot. Compared to the software above, ReMove is designed only for scientific research, which is capable of driving robots, experimental design, and collecting data. It has applications in mechanic re-search, clinical practice, and clinical study. 
-
-In the field of the motor control study, ReMove provides a way for direct control of the ro-bot to create different dynamic environment, including the magnitude of resistance, the property of resistance, and the movement trajectories. ReMove not only simulate both the inertial and viscous load but also implement the continuous control of applied load just by typing the keyboard. Using ReMove, researchers are freed from the heavy experiment prep-arations (such as lifting 30Kg weight plates) and create the expecting environment in minutes. In the field of clinical practice, ReMove simplifies the customization of movement trajectory and resistance. It enables the therapists who don’t have any programming capabil-ity to set dynamic parameters using a user interface, which is important in the concept of ‘precise rehabilitation’. In the field of clinical study, ReMove is developed based on the commercial upper limb rehabilitation robot – M2pro (Fourier Intelligence inc., Shanghai, China). Based on the initial code, ReMove can get access to most  commercial robots on the market. This may narrow the instrumental error in the multicenter-clinical trials and the bias in the future META analysis.
+Here we introduce ReMove, a programmable application for the customization of robot-delivered resistance and robot-guided movements on haptic robots. The main value of Re-Move is to provide an integrated research environment that allowed both generation and manipulation of resistance during human upper-limb movements. Using ReMove, it is ex-pected to significantly reduce the time to prepare an experiment that need trial-by-trial mod-ification on resistance.
 
 # Software overview
 
-The overall structure chart is shown in [Figure 1](#refer-anchor-1).
+The architecture of ReMove is shown in [Figure 1](#refer-anchor-1). Notice that the experimental setups are specified through the Parametr Interfaces, and most of the logics are programmed in the module of device synchronization. Modules communicate asynchronously for better per-formance. The current version of ReMove is adapted to M2PRO, a 2D haptic robot licensed for clinical use in China (Fourier Intelligence inc., Shanghai, China). The support will ex-pand to other available makes and models including Phantom series, HapticMASTER, etc.
 
-<div id="refer-anchor-1" align=center><img src="./StructureDiagram.jpg" /></div>
+<div id="refer-anchor-1" align=center><img src="./Fig_1.jpg" /></div>
 
-<p align="center">Figure 1. The architecture chart of ReMove.</p>
+<p align="center">Figure 1. The architecture of ReMove.</p>
 
-ReMove has three different functional modules, including the customization of movement, device status tracking, and the extraction of kinematic data. 
+ReMove allows researchers to customize the following parameters of each movement trial using plain-text (.csv format in the existing version):
 
-The main UI of ReMove is shown in [Figure 2](#refer-anchor-2).
+1. The location of the starting point.
+2. The location of the target.
+3. The type of the resistance.
+4. The magnitude of the resistance.
 
-<div id="refer-anchor-2" align=center><img src="./MainUI.jpg" /></div>
+During each trial of movement, ReMove renders the graphical details specified in the .csv files. Both a subject view ([Figure 2.A](#refer-anchor-2), minimal display of experimental status) an inspector view ([Figure 2.B](#refer-anchor-2), rich information about experimental status) are rendered.
 
-<p align="center">Figure 2. The main UI of ReMove.</p>
+<div id="refer-anchor-2" align=center><img src="./Fig_2.png" /></div>
 
-ReMove customizes movement tracks through the grip of M2pro based on the default trial-based paradigm, which is a point-to-point movement. Researchers can freely set the location of start-point and end-point by the user interface within the range of the operation platform (52cm * 36cm). what’s more, as shown in Figure 2.B, ReMove also provides a visual feed-back during the movement trials, displaying the real-time position of the grip and the targets. 
+<p align="center">Figure 2. The main UIs of ReMove. A) the subject view, displaying only task-related elements to the participant. B) the inspector view, with additional information about test progress, de-vice status, etc.</p>
 
-ReMove can extract the kinematic data of the grip of M2pro in 25Hz maximum, including the location and force in two-dimensional coordinate. Meanwhile, ReMove also outputs the corresponding state of the finite state machine in each observation point. Based on that, re-searchers can split the whole kinematic data into every point-to-point movement, which is really convenient for the following analysis including motor learning, muscle synergy calcu-lation, and collaborative analysis. All data extracted is saved in .csv format. 
+ReMove customizes movement tracks through the grip of M2pro based on the default trial-based paradigm, which is a point-to-point movement. Researchers can freely set the location of start-point and end-point by the user interface within the range of the operation platform (52cm * 36cm). what’s more, as shown in [Figure 2.B](#refer-anchor-2), ReMove also provides a visual feed-back during the movement trials, displaying the real-time position of the grip and the targets.
+
+ReMove can extract the kinematic data of the grip of M2pro in 25Hz maximum, including the location and force in two-dimensional coordinate. Meanwhile, ReMove also outputs the corresponding state of the finite state machine in each observation point. Based on that, re-searchers can split the whole kinematic data into every point-to-point movement, which is really convenient for the following analysis including motor learning, muscle synergy calcu-lation, and collaborative analysis. All data extracted is saved in .csv format.
 
 # Experimental example
 
-To demonstrate the function of ReMove, we collected one set of kinematic data in Ruijin Hospital.
+We accomplished pilot experiments with a volunteer. The volunteer was asked to move from a starting point (close to his chest) to 7 different targets (25cm away) under 2 levels of inertial load. Parameter setting was accomplished by a therapist naïve of computer pro-gramming. The parameter setting took about 5 mintues. [Figure 3.B](#refer-anchor-3) shows that the volunteer per-formed straight movements. Notice that the peak-velocity decreased ([Figure 3.B](#refer-anchor-3)) due to in-creased magnitude of resistance.
 
-The subject was asked to move towards from start-point to seven different targets set by the therapist who does not have any knowledge of programming. The trajectories and velocity profiles are shown in [Figure 3](#refer-anchor-3).
+<div id="refer-anchor-3" align=center><img src="./Fig_3.png" /></div>
 
-<div id="refer-anchor-3" align=center><img src="./DataSample.png" /></div>
-
-<p align="center">Figure 3. The data sample of ReMove.</p>
+<p align="center">Figure 3. The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condi-tion (10N.s2/m,30N.s/m). C)This panel displays the trajectories and movement velocity pro-files in heavy condition (50N.s2/m,30N.s/m).</p>
 
 # Acknowledgements
 
-We want to thank Fourier Intelligence inc., for providing M2pro to develop ReMove. We also want to thank Yongjun Qiao in Ruijin hospital for helping us test ReMove.
-
-This word is funded by the General Project of National Natural Science Foundation of China (81971722); Shanghai Science and Technology Commission Project (CZ-201912940); Shanghai Municipal Health Commission Project (2019SY004).
+The authors thank Yongjun Qiao for help with the design and test of ReMove. This work is funded by the General Project of National Natural Science Foundation of China (81971722); Shanghai Science and Technology Commission Project (19511105600); Shanghai Municipal Health Commission Project (2019SY004).
 
 # References
 
-Bishop, Robert H. 2000. _Learning with LabVIEW_. 3. print., Student ed. Menlo Park, Calif.: Addison-Wesley Longman.
-
-Dai, Te, Jing Liu, Vinod Sahgal, Robert Brown, and Guang Yue. 2001. &quot;Relationship between Muscle Output and Functional MRI-Measured Brain Activation.&quot; _Experimental Brain Research_ 140 (3): 290–300. <https://doi.org/10.1007/s002210100815>.
-
-Dettmers, C., G. R. Fink, R. N. Lemon, K. M. Stephan, R. E. Passingham, D. Silbersweig, A. Holmes, M. C. Ridding, D. J. Brooks, and R. S. Frackowiak. 1995. &quot;Relation between Cerebral Activity and Force in the Motor Areas of the Human Brain.&quot; _Journal of Neurophysiology_ 74 (2): 802–15. <https://doi.org/10.1152/jn.1995.74.2.802>.
-
 Flansbjer, U, J Lexell, and C Brogårdh. 2012. &quot;Long-Term Benefits of Progressive Resistance Training in Chronic Stroke: A 4-Year Follow-Up.&quot; _Journal of Rehabilitation Medicine_ 44 (3): 218–21. <https://doi.org/10.2340/16501977-0936>.
 
-Gambassi, Bruno Bavaresco, Hélio José Coelho-Junior, and Paulo Adriano Schwingel. n.d. &quot;Resistance Training and Stroke: A Critical Analysis of Different Training Programs.&quot; _Stroke Research and Treatment_, 12.
+Flansbjer, Ub, M Miller, D Downham, and J Lexell. 2008. &quot;Progressive Resistance Training after Stroke: Effects on Muscle Strength, Muscle Tone, Gait Performance and Perceived Participation.&quot; _Journal of Rehabilitation Medicine_ 40 (1): 42–48. <https://doi.org/10.2340/16501977-0129>.
 
-Gottlieb, G. L. 1996. &quot;On the Voluntary Movement of Compliant (Inertial-Viscoelastic) Loads by Parcellated Control Mechanisms.&quot; _Journal of Neurophysiology_ 76 (5): 3207–29. <https://doi.org/10.1152/jn.1996.76.5.3207>.
-
-Ouellette, Michelle M., Nathan K. LeBrasseur, Jonathan F. Bean, Edward Phillips, Joel Stein, Walter R. Frontera, and Roger A. Fielding. 2004. &quot;High-Intensity Resistance Training Improves Muscle Strength, Self-Reported Function, and Disability in Long-Term Stroke Survivors.&quot; _Stroke_ 35 (6): 1404–9. <https://doi.org/10.1161/01.STR.0000127785.73065.34>.
-
-Peirce, Jonathan W. 2007. &quot;PsychoPy—Psychophysics Software in Python.&quot; _Journal of Neuroscience Methods_ 162 (1–2): 8–13. <https://doi.org/10.1016/j.jneumeth.2006.11.017>.
-
-
-
-
+Mehta, Swati, Shelialah Pereira, Ricardo Viana, Rachel Mays, Amanda McIntyre, Shannon Janzen, and Robert W. Teasell. 2012. &quot;Resistance Training for Gait Speed and Total Distance Walked During the Chronic Stage of Stroke: A Meta-Analysis.&quot; _Topics in Stroke Rehabilitation_ 19 (6): 471–78. <https://doi.org/10.1310/tsr1906-471>.
