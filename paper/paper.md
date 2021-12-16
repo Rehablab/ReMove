@@ -21,16 +21,16 @@ authors:
     - name: Cheng Zhuang
       affiliation: "3"
       orcid:
-    - name: Minos.Niu^[corresponding author]
+    - name: Chuanxin M. Niu^[corresponding author]
       affiliation: "1"
-      orcid: XXXX
+      orcid: 0000-0001-6013-2492
 
 affiliations:
     - name: Department of Rehabilitation Medicine, Ruijin Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China.
       index: 1
     - name: School of Medicine, Shanghai Jiao Tong University, Shanghai, China.
       index: 2
-    - name: Fourier Intelligence inc., Shanghai, China.
+    - name: Shanghai Fourier Intelligence Co., Ltd.
       index: 3
 
 date: 12 December 2021
@@ -53,7 +53,7 @@ Here we introduce ReMove, a programmable application for the customization of ro
 
 The architecture of ReMove is shown in \autoref{fig:1}. Notice that the experimental setups are specified through the Parameter Interfaces, and most of the logics are programmed in the module of device synchronization. Modules communicate asynchronously for better performance. The current version of ReMove is adapted to M2PRO, a 2D haptic robot licensed for clinical use in China (Fourier Intelligence inc., Shanghai, China). The support will expand to other available makes and models including Phantom series, HapticMASTER, etc.
 
-![The architecture of ReMove.](Fig_1.jpg){#fig:1}{width="70%"}
+![The architecture of ReMove.](Fig_1.jpg){#fig:1 width="60%"}
 
 ReMove allows researchers to customize the following parameters using plain-text (.csv format in the existing version):
 
