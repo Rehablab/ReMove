@@ -49,11 +49,9 @@ Here we introduce ReMove, a programmable application for the customization of ro
 
 # Software overview
 
-The architecture of ReMove is shown in [Figure 1](#refer-anchor-1). Notice that the experimental setups are specified through the Parametr Interfaces, and most of the logics are programmed in the module of device synchronization. Modules communicate asynchronously for better per-formance. The current version of ReMove is adapted to M2PRO, a 2D haptic robot licensed for clinical use in China (Fourier Intelligence inc., Shanghai, China). The support will ex-pand to other available makes and models including Phantom series, HapticMASTER, etc.
+The architecture of ReMove is shown in \autoref{fig:1}. Notice that the experimental setups are specified through the Parametr Interfaces, and most of the logics are programmed in the module of device synchronization. Modules communicate asynchronously for better per-formance. The current version of ReMove is adapted to M2PRO, a 2D haptic robot licensed for clinical use in China (Fourier Intelligence inc., Shanghai, China). The support will ex-pand to other available makes and models including Phantom series, HapticMASTER, etc.
 
-<div id="refer-anchor-1" align=center><img src="./Fig_1.jpg" /></div>
-
-<p align="center">Figure 1. The architecture of ReMove.</p>
+![The architecture of ReMove.\label{fig:1}](./Fig_1.jpg){ width=100% }
 
 ReMove allows researchers to customize the following parameters of each movement trial using plain-text (.csv format in the existing version):
 
@@ -62,23 +60,19 @@ ReMove allows researchers to customize the following parameters of each movement
 3. The type of the resistance.
 4. The magnitude of the resistance.
 
-During each trial of movement, ReMove renders the graphical details specified in the .csv files. Both a subject view ([Figure 2.A](#refer-anchor-2), minimal display of experimental status) an inspector view ([Figure 2.B](#refer-anchor-2), rich information about experimental status) are rendered.
+During each trial of movement, ReMove renders the graphical details specified in the .csv files. Both a subject view (\autoref{fig:2}.A, minimal display of experimental status) an inspector view (\autoref{fig:2}.B, rich information about experimental status) are rendered.
 
-<div id="refer-anchor-2" align=center><img src="./Fig_2.png" /></div>
+![The main UIs of ReMove. A) the subject view, displaying only task-related elements to the participant. B) the inspector view, with additional information about test progress, de-vice status, etc.\label{fig:2}](./Fig_2.png){ width=100% }
 
-<p align="center">Figure 2. The main UIs of ReMove. A) the subject view, displaying only task-related elements to the participant. B) the inspector view, with additional information about test progress, de-vice status, etc.</p>
-
-ReMove customizes movement tracks through the grip of M2pro based on the default trial-based paradigm, which is a point-to-point movement. Researchers can freely set the location of start-point and end-point by the user interface within the range of the operation platform (52cm * 36cm). what’s more, as shown in [Figure 2.B](#refer-anchor-2), ReMove also provides a visual feed-back during the movement trials, displaying the real-time position of the grip and the targets.
+ReMove customizes movement tracks through the grip of M2pro based on the default trial-based paradigm, which is a point-to-point movement. Researchers can freely set the location of start-point and end-point by the user interface within the range of the operation platform (52cm * 36cm). what’s more, as shown in \autoref{fig:2}.B, ReMove also provides a visual feed-back during the movement trials, displaying the real-time position of the grip and the targets.
 
 ReMove can extract the kinematic data of the grip of M2pro in 25Hz maximum, including the location and force in two-dimensional coordinate. Meanwhile, ReMove also outputs the corresponding state of the finite state machine in each observation point. Based on that, re-searchers can split the whole kinematic data into every point-to-point movement, which is really convenient for the following analysis including motor learning, muscle synergy calcu-lation, and collaborative analysis. All data extracted is saved in .csv format.
 
 # Experimental example
 
-We accomplished pilot experiments with a volunteer. The volunteer was asked to move from a starting point (close to his chest) to 7 different targets (25cm away) under 2 levels of inertial load. Parameter setting was accomplished by a therapist naïve of computer pro-gramming. The parameter setting took about 5 mintues. [Figure 3.B](#refer-anchor-3) shows that the volunteer per-formed straight movements. Notice that the peak-velocity decreased ([Figure 3.B](#refer-anchor-3)) due to in-creased magnitude of resistance.
+We accomplished pilot experiments with a volunteer. The volunteer was asked to move from a starting point (close to his chest) to 7 different targets (25cm away) under 2 levels of inertial load. Parameter setting was accomplished by a therapist naïve of computer pro-gramming. The parameter setting took about 5 mintues. \autoref{fig:2}.B shows that the volunteer per-formed straight movements. Notice that the peak-velocity decreased (\autoref{fig:2}.B) due to in-creased magnitude of resistance.
 
-<div id="refer-anchor-3" align=center><img src="./Fig_3.png" /></div>
-
-<p align="center">Figure 3. The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condi-tion (10N.s2/m,30N.s/m). C)This panel displays the trajectories and movement velocity pro-files in heavy condition (50N.s2/m,30N.s/m).</p>
+![The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condi-tion (10N.s2/m,30N.s/m). C)This panel displays the trajectories and movement velocity pro-files in heavy condition (50N.s2/m,30N.s/m).\label{fig:3}](./Fig_3.png){ width=100% }
 
 # Acknowledgements
 
