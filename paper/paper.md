@@ -7,7 +7,6 @@ tags:
     - Motor Control
     - Unity
     - CSharp
-
 authors:
     - name: Qiang Xu^[co-first author]
       affiliation: "3"
@@ -21,13 +20,12 @@ authors:
     - name: Cheng Zhuang
       affiliation: "3"
       orcid:
-    - name: Zen Koh
+    - name: Teck Hong Koh
       affiliation: "3"
       orcid:
     - name: Chuanxin M. Niu^[corresponding author&#58;&nbsp;minos.niu&#64;gmail.com]
       affiliation: "1"
       orcid: 0000-0001-6013-2492
-
 affiliations:
     - name: Department of Rehabilitation Medicine, Ruijin Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China.
       index: 1
@@ -36,7 +34,7 @@ affiliations:
     - name: Shanghai Fourier Intelligence Co., Ltd.
       index: 3
 
-date: 12 December 2021
+date: 16 December 2021
 bibliography: paper.bib
 ---
 
