@@ -21,6 +21,9 @@ authors:
     - name: Cheng Zhuang
       affiliation: "3"
       orcid:
+    - name: Zen Koh
+      affiliation: "3"
+      orcid:
     - name: Chuanxin M. Niu^[corresponding author]
       affiliation: "1"
       orcid: 0000-0001-6013-2492
@@ -53,7 +56,7 @@ Here we introduce ReMove, a programmable application for the customization of ro
 
 The architecture of ReMove is shown in \autoref{fig:1}. Notice that the experimental setups are specified through the Parameter Interfaces, and most of the logics are programmed in the module of device synchronization. Modules communicate asynchronously for better performance. The current version of ReMove is adapted to M2PRO, a 2D haptic robot licensed for clinical use in China (Fourier Intelligence inc., Shanghai, China). The support will expand to other available makes and models including Phantom series, HapticMASTER, etc.
 
-![The architecture of ReMove.](Fig_1.jpg){#fig:1 width="60%"}
+![The architecture of ReMove.](Fig_1.png){#fig:1 width="60%"}
 
 ReMove allows researchers to customize the following parameters using plain-text (.csv format in the existing version):
 
@@ -64,13 +67,13 @@ ReMove allows researchers to customize the following parameters using plain-text
 
 During each trial of movement, ReMove renders the graphical details corresponding to the .csv files. Both a subject view (\autoref{fig:2}.A, minimal display of experimental status) an inspector view (\autoref{fig:2}.B, rich information about experimental status) are rendered.
 
-![The main UIs of ReMove. A) the subject view, displaying only task-related elements to the participant. B) the inspector view, with additional information about test progress, device status, etc.\label{fig:2}](./Fig_2.jpg)
+![The main UIs of ReMove. A) the subject view, displaying only task-related elements to the participant. B) the inspector view, with additional information about test progress, device status, etc.\label{fig:2}](./Fig_2.png)
 
 # Experimental example
 
 We accomplished pilot experiments with a volunteer. The volunteer was asked to move from a starting point (close to his chest) to 7 different targets (25cm away) under 2 levels of inertial load. Parameter setting was accomplished by a therapist naïve of computer programming. The parameter setting took about 5 minutes. \autoref{fig:3} shows that the volunteer performed straight movements. Notice that the peak-velocity decreased (\autoref{fig:3}.B) due to the increased magnitude of resistance.
 
-![The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condition (10Ns^2^/m,30Ns/m). C)This panel displays the trajectories and movement velocity profiles in heavy condition (50Ns^2^/m,30Ns/m).\label{fig:3}](./Fig_3.jpg)
+![The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condition (10Ns^2^/m,30Ns/m). C)This panel displays the trajectories and movement velocity profiles in heavy condition (50Ns^2^/m,30Ns/m).\label{fig:3}](./Fig_3.png)
 
 # Acknowledgements
 
