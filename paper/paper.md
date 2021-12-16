@@ -24,7 +24,7 @@ authors:
     - name: Zen Koh
       affiliation: "3"
       orcid:
-    - name: Chuanxin M. Niu^[corresponding author:minos.niu@gmail.com]
+    - name: Chuanxin M. Niu^[corresponding author: minos.niu@gmail.com]
       affiliation: "1"
       orcid: 0000-0001-6013-2492
 
