@@ -10,13 +10,13 @@ tags:
 
 authors:
     - name: Qiang Xu^[co-first author]
-      affiliation: "1, 3"
+      affiliation: "3"
       orcid: 0000-0001-8781-301X
     - name: Zhi Chen^[co-first author]
       affiliation: "1, 2"
       orcid: 0000-0002-0202-006X
     - name: Jiaxi Tang
-      affiliation: "1, 3"
+      affiliation: "3"
       orcid:
     - name: Cheng Zhuang
       affiliation: "3"
@@ -24,7 +24,7 @@ authors:
     - name: Zen Koh
       affiliation: "3"
       orcid:
-    - name: Chuanxin M. Niu^[corresponding author:&nbsp;minos.niu@gmail.com]
+    - name: Chuanxin M. Niu^[corresponding author&#58;&nbsp;minos.niu@gmail.com]
       affiliation: "1"
       orcid: 0000-0001-6013-2492
 
