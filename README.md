@@ -1,4 +1,4 @@
-# X-Controller Documentation
+# ReMove Documentation
 
 ## Overview
 
@@ -47,7 +47,7 @@ A peer-to-peer motion experiment simulated with a mouse.When the motion reaches 
 1. Click on unity's menu bar in turn. `Windows > Generl > Test Runner`
 2. Click the `Run All` button to start the global test
 
-![Test X-Controller](/Usage/UnitTest_1.jpg "Test X-Controller")
+![Test ReMove](/Usage/UnitTest_1.jpg "Test ReMove")
 
 ## Upgrades and New Features
 
