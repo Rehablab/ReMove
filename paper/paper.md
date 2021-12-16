@@ -73,7 +73,7 @@ During each trial of movement, ReMove renders the graphical details correspondin
 
 We accomplished pilot experiments with a volunteer. The volunteer was asked to move from a starting point (close to his chest) to 7 different targets (25cm away) under 2 levels of inertial load. Parameter setting was accomplished by a therapist naïve of computer programming. The parameter setting took about 5 minutes. \autoref{fig:3} shows that the volunteer performed straight movements. Notice that the peak-velocity decreased (\autoref{fig:3}B) due to the increased magnitude of resistance.
 
-![The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condition (10Ns^2^/m,30Ns/m). C)This panel displays the trajectories and movement velocity profiles in heavy condition (50Ns^2^/m,30Ns/m).\label{fig:3}](./Fig_3.png)
+![The Pilot data of ReMove. A) The actual scene of one clinical study supported by ReMove. B) This panel displays the trajectories and movement velocity profiles in light condition (10Ns^2^/m,30Ns/m). C)This panel displays the trajectories and movement velocity profiles in heavy condition (50Ns^2^/m,30Ns/m).](./Fig_3.png){#fig:3 width="100%"}
 
 # Acknowledgements
 
