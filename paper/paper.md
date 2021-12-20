@@ -16,10 +16,8 @@ authors:
       orcid: 0000-0002-0202-006X
     - name: Jiaxi Tang
       affiliation: "3"
-      orcid:
     - name: Cheng Zhuang
       affiliation: "3"
-      orcid:
     - name: Teck Hong Koh
       affiliation: "3"
     - name: Chuanxin M. Niu^[corresponding author&#58; minos.niu&#64;gmail.com]
