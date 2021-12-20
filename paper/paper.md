@@ -32,7 +32,6 @@ affiliations:
       index: 3
     - name: Laboratory of Neurorehabilitation Engineering, School of Biomedical Engineering, Shanghai Jiao Tong University, Shanghai, China.
       index: 4
-
 date: 16 December 2021
 bibliography: paper.bib
 ---
