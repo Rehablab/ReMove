@@ -80,9 +80,3 @@ We accomplished pilot experiments with a volunteer. The volunteer was asked to m
 The authors thank Yongjun Qiao for help with the design and test of ReMove. This work is funded by the General Project of National Natural Science Foundation of China (81971722); Shanghai Science and Technology Commission Project (19511105600); Shanghai Municipal Health Commission Project (2019SY004).
 
 # References
-
-Flansbjer, U, J Lexell, and C Brogårdh. 2012. &quot;Long-Term Benefits of Progressive Resistance Training in Chronic Stroke: A 4-Year Follow-Up.&quot; _Journal of Rehabilitation Medicine_ 44 (3): 218–21. <https://doi.org/10.2340/16501977-0936>.
-
-Flansbjer, Ub, M Miller, D Downham, and J Lexell. 2008. &quot;Progressive Resistance Training after Stroke: Effects on Muscle Strength, Muscle Tone, Gait Performance and Perceived Participation.&quot; _Journal of Rehabilitation Medicine_ 40 (1): 42–48. <https://doi.org/10.2340/16501977-0129>.
-
-Mehta, Swati, Shelialah Pereira, Ricardo Viana, Rachel Mays, Amanda McIntyre, Shannon Janzen, and Robert W. Teasell. 2012. &quot;Resistance Training for Gait Speed and Total Distance Walked During the Chronic Stage of Stroke: A Meta-Analysis.&quot; _Topics in Stroke Rehabilitation_ 19 (6): 471–78. <https://doi.org/10.1310/tsr1906-471>.
